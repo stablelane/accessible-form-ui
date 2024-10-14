@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Accessible Form UI</title>
+    <meta name="description" content="Accessible Form UI Index page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="input-area">
+            <label for="fullname">Full Name</label>
+            <input type="text" aria-required="true" placeholder="What should we call you?" id="fullname" required>
+            <span class="error-message">Full name is required</span>
+
+            <label for="email">Email</label>
+            <input type="email" aria-required="true" placeholder="john@doe.com" id="email" required>
+            <span class="error-message">Email is required</span>
+
+            <label for="password">Enter Password</label>
+            <input type="password" aria-required="true" placeholder="xxxxxxxx" id="password" required>
+            <span class="error-message">Password is required</span>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" aria-required="true" placeholder="xxxxxxxx" id="confirm-password" required>
+            <span class="error-message">Confirm Password </span>
+
+            <button type="submit">Updata Profile</button>
+
+        </form>
+
+        <div class="profile-complete">
+            <div class="circle-counter">
+                <h3>50%</h3>
+            </div>
+            <h3>Profile Completeness</h3>
+            <div class="complete-list">
+                <h4 class="crossed-list">Create Account</h4>
+                <h4 class="crossed-list">Update Roadmap Progress</h4>
+                <h4 class="crossed-list">Setup Public Profile</h4>
+                <h4>Complete your first project</h4>
+                <h4>Invite your Friends</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
